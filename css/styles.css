@@ -1,0 +1,11 @@
+body {
+    background-color: #333838;
+    text-align: center;
+}
+header, main, footer {
+    font-family:'Muli', sans-serif;
+    color: #add8e6;
+}
+a {
+     color: green
+}
