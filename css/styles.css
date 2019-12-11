@@ -1,10 +1,18 @@
 body {
-    background-color: #333838;
-    text-align: center;
+    background-color: #303844;
+    margin: 0 auto;
+}
+section {
+    width: 100%;
+    max-width: 700px;
+    padding: 50px;
 }
 header, main, footer {
     font-family:'Muli', sans-serif;
     color: #add8e6;
+}
+footer {
+    text-align: center;
 }
 h1 {
     font-size: 4em;
@@ -31,3 +39,77 @@ p{
                  0 10px 10px rgba(0,0,0,.2),
                  0 20px 20px rgba(0,0,0,.15);
   }
+  .vol {
+    margin: 0 auto;
+    object-fit: none;
+    object-position: 0 60%;
+    height: 216px;
+    width: 1920px;
+    /*max-width: 850px;*/
+  }
+
+  nav ul.drop {
+    margin: 0 auto;
+    font-family:'Muli', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+} 
+
+ul.drop a {
+    text-decoration: none;
+    color: #fff;
+}
+ul.drop, ul.drop li {
+    list-style: none;
+    color: #fff;
+    background-color: #191d24;
+}
+ul.drop li {
+    float: left;
+    padding: 10px;
+    line-height: 1.3em;
+    width: 18%;
+    border: 3px #191d24;
+}
+ul.drop ul {
+  /* display: none;*/
+   top: 1.8em;
+   display: block;
+   position: absolute;
+   margin-left: -9999px;
+}
+ul.drop li li {
+    width: 100%;
+}
+ul.drop li ul li {
+    background-color: #5b6a81;
+}
+
+ul.drop li ul li:hover {
+    position: relative;
+    background-color: #191d24;
+}
+ul.drop li:hover {
+    position: relative;
+    background-color: #5b6a81;
+}
+ul.drop li:hover > ul {
+    margin: 8px 25px 0 -25px;
+}
+ul.drop ul ul {
+    top: 0;
+    left: 105%;
+    width: 100%;
+}
+
+/*Responsiveness*/
+
+@media (max-width: 750px) {
+    .vol {
+        max-width: 850px;
+    }
+}
+@media (min-width: 800px){
+    section{ padding: 100px;}
+    footer{ width: 32%;}
+}
